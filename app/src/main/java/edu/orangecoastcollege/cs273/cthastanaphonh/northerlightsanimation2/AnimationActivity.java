@@ -27,6 +27,12 @@ public class AnimationActivity extends AppCompatActivity {
         lightsImageView = (ImageView) findViewById(R.id.lightsImageView);
     }
 
+/**
+* This method runs the rotation animation and checks if the the animation
+* is currently running. If yes the onClick will stop the rotation. 
+* If no the animation will start the rotation. 
+*@param View is the current view the image view is in 
+*/
     public void toggleFrameAnim(View view){
         // hasn't been initialized
         if (frameAnim == null)
