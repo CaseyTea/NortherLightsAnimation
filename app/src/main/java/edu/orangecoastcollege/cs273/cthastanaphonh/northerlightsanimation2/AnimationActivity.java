@@ -66,6 +66,10 @@ public class AnimationActivity extends AppCompatActivity {
             rotateAnim = null;
     }
 
+    /**
+     * This method will trigger a quick shake animation
+     * @param view the current view where the image is located
+     */
     public void toggleShakeAnim(View view){
 
         shakeAnim = AnimationUtils.loadAnimation(this, R.anim.shake_anim);
