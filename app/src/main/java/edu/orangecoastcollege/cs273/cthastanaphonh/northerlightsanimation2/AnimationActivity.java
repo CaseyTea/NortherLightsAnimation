@@ -27,6 +27,10 @@ public class AnimationActivity extends AppCompatActivity {
         lightsImageView = (ImageView) findViewById(R.id.lightsImageView);
     }
 
+    /**
+     * This button will toggle the frame animation, which will move the image through 4 frames.
+     * @param view the current view
+     */
     public void toggleFrameAnim(View view){
         // hasn't been initialized
         if (frameAnim == null)
