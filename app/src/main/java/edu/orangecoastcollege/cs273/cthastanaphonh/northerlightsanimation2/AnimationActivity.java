@@ -47,6 +47,11 @@ public class AnimationActivity extends AppCompatActivity {
             frameAnim.start();
     }
 
+    /**
+     * This method will check to see if the rotate animation is already running and toggle
+     * accordingly
+     * @param view the current view where the image is located
+     */
     public void toggleRotateAnim(View view){
         // hasn't been initialized yet
         if(rotateAnim == null)
