@@ -27,6 +27,10 @@ public class AnimationActivity extends AppCompatActivity {
         lightsImageView = (ImageView) findViewById(R.id.lightsImageView);
     }
 
+    /**
+     * This button will toggle the frame animation, which will move the image through 4 frames.
+     * @param view the current view
+     */
     public void toggleFrameAnim(View view){
         // hasn't been initialized
         if (frameAnim == null)
@@ -43,6 +47,11 @@ public class AnimationActivity extends AppCompatActivity {
             frameAnim.start();
     }
 
+    /**
+     * This method will check to see if the rotate animation is already running and toggle
+     * accordingly
+     * @param view the current view where the image is located
+     */
     public void toggleRotateAnim(View view){
         // hasn't been initialized yet
         if(rotateAnim == null)
@@ -57,6 +66,10 @@ public class AnimationActivity extends AppCompatActivity {
             rotateAnim = null;
     }
 
+    /**
+     * This method will trigger a quick shake animation
+     * @param view the current view where the image is located
+     */
     public void toggleShakeAnim(View view){
 
         shakeAnim = AnimationUtils.loadAnimation(this, R.anim.shake_anim);
