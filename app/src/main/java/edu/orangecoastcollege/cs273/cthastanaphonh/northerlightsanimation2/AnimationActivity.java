@@ -57,6 +57,7 @@ public class AnimationActivity extends AppCompatActivity {
             rotateAnim = null;
     }
 
+    // Caused Image to shake using the built in animations of Android Studio
     public void toggleShakeAnim(View view){
 
         shakeAnim = AnimationUtils.loadAnimation(this, R.anim.shake_anim);
